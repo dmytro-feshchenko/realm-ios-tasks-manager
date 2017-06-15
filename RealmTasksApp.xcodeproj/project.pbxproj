@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		080485A41EF1B575006B73D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080485A31EF1B575006B73D4 /* AppDelegate.swift */; };
 		080485A61EF1B575006B73D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080485A51EF1B575006B73D4 /* ViewController.swift */; };
-		080485A91EF1B575006B73D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080485A71EF1B575006B73D4 /* Main.storyboard */; };
 		080485AB1EF1B575006B73D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 080485AA1EF1B575006B73D4 /* Assets.xcassets */; };
 		080485AE1EF1B575006B73D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 080485AC1EF1B575006B73D4 /* LaunchScreen.storyboard */; };
 		080485B91EF1B575006B73D4 /* RealmTasksAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080485B81EF1B575006B73D4 /* RealmTasksAppTests.swift */; };
@@ -29,13 +28,13 @@
 		080485A01EF1B575006B73D4 /* RealmTasksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTasksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		080485A31EF1B575006B73D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		080485A51EF1B575006B73D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		080485A81EF1B575006B73D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		080485AA1EF1B575006B73D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		080485AD1EF1B575006B73D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		080485AF1EF1B575006B73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		080485B41EF1B575006B73D4 /* RealmTasksAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTasksAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		080485B81EF1B575006B73D4 /* RealmTasksAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTasksAppTests.swift; sourceTree = "<group>"; };
 		080485BA1EF1B575006B73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		080485C31EF2CFDC006B73D4 /* RealmTasksApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RealmTasksApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +76,9 @@
 		080485A21EF1B575006B73D4 /* RealmTasksApp */ = {
 			isa = PBXGroup;
 			children = (
+				080485C31EF2CFDC006B73D4 /* RealmTasksApp.entitlements */,
 				080485A31EF1B575006B73D4 /* AppDelegate.swift */,
 				080485A51EF1B575006B73D4 /* ViewController.swift */,
-				080485A71EF1B575006B73D4 /* Main.storyboard */,
 				080485AA1EF1B575006B73D4 /* Assets.xcassets */,
 				080485AC1EF1B575006B73D4 /* LaunchScreen.storyboard */,
 				080485AF1EF1B575006B73D4 /* Info.plist */,
@@ -148,6 +147,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9LP7K65RT9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 					080485B31EF1B575006B73D4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -183,7 +187,6 @@
 			files = (
 				080485AE1EF1B575006B73D4 /* LaunchScreen.storyboard in Resources */,
 				080485AB1EF1B575006B73D4 /* Assets.xcassets in Resources */,
-				080485A91EF1B575006B73D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +228,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		080485A71EF1B575006B73D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				080485A81EF1B575006B73D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		080485AC1EF1B575006B73D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
